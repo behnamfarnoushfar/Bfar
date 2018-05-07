@@ -1,0 +1,5 @@
+F:\Workspace\GitProjects\Bfar\Bfar\bin\Debug\Bfar.dll
+F:\Workspace\GitProjects\Bfar\Bfar\bin\Debug\Bfar.pdb
+F:\Workspace\GitProjects\Bfar\Bfar\obj\Debug\Bfar.csproj.CoreCompileInputs.cache
+F:\Workspace\GitProjects\Bfar\Bfar\obj\Debug\Bfar.dll
+F:\Workspace\GitProjects\Bfar\Bfar\obj\Debug\Bfar.pdb

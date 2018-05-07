@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>BfarRepository</id>
+    <version>1.0.0</version>
+    <title>BfarRepository</title>
+    <authors>Behnam Farnoushfar</authors>
+    <owners>Behnam Farnoushfar</owners>
+    <licenseUrl>https://github.com/behnamfarnoushfar/Bfar</licenseUrl>
+    <projectUrl>https://github.com/behnamfarnoushfar/Bfar</projectUrl>
+    <iconUrl>https://github.com/behnamfarnoushfar/Bfar</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Yet another repository base on dapper with fluent api.</description>
+    <releaseNotes>beta testing.</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>repository dapper fluentapi</tags>
+  </metadata>
+</package>
