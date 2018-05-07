@@ -20,7 +20,7 @@ namespace Bfar.Repository
         private string providerString;
         private IDbConnection _connection;
         private IDbTransaction _currentTransaction;
-        public static MSSQL Factory { get { return new MSSQL(); } }
+        public static MSSQL Factory { get { return new MSSQL(); } } 
         public static MSSQL Connect(string connectionString)
         {
             return new MSSQL(connectionString);
