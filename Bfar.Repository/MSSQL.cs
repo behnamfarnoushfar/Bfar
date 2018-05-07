@@ -23,7 +23,7 @@ namespace Bfar.Repository
         public static MSSQL Factory { get { return new MSSQL(); } } 
         public static MSSQL Connect(string connectionString)
         {
-            return new MSSQL(connectionString);
+            return new MSSQL(connectionString); 
         }
         public string AdHocCommand { get; set; }
         public int MinTimeOut { get; set; }

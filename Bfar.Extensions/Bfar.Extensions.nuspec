@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>BfarExtensions</id>
+    <version>1.0.0</version>
+    <title>$title$</title>
+    <authors>Behnam Farnoushfar</authors>
+    <owners>Behnam Farnoushfar</owners>
+    <licenseUrl>https://github.com/behnamfarnoushfar/Bfar</licenseUrl>
+    <projectUrl>https://github.com/behnamfarnoushfar/Bfar</projectUrl>
+    <iconUrl>https://github.com/behnamfarnoushfar/Bfar</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A set of methods to do extra jobs done:
+    -ListToDataTable
+    -DataTableToList
+    </description>
+    <releaseNotes>beta</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>bfar extensions ListToDataTable DataTableToList</tags>
+  </metadata>
+</package>
