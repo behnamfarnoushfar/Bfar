@@ -44,5 +44,14 @@
     <Compile Include="GoF\AbstractFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\net471\Bfar.Patterns.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Bfar.Patterns.nuspec" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(ProjectDir)bin\Release\* $(ProjectDir)lib\net471\</PostBuildEvent>
+  </PropertyGroup>
 </Project>

@@ -1,0 +1,6 @@
+F:\Workspace\GitProjects\Bfar\Bfar.Extensions.Persian\bin\Debug\Bfar.Extensions.Persian.dll
+F:\Workspace\GitProjects\Bfar\Bfar.Extensions.Persian\bin\Debug\Bfar.Extensions.Persian.pdb
+F:\Workspace\GitProjects\Bfar\Bfar.Extensions.Persian\obj\Debug\Bfar.Extensions.Persian.csprojAssemblyReference.cache
+F:\Workspace\GitProjects\Bfar\Bfar.Extensions.Persian\obj\Debug\Bfar.Extensions.Persian.csproj.CoreCompileInputs.cache
+F:\Workspace\GitProjects\Bfar\Bfar.Extensions.Persian\obj\Debug\Bfar.Extensions.Persian.dll
+F:\Workspace\GitProjects\Bfar\Bfar.Extensions.Persian\obj\Debug\Bfar.Extensions.Persian.pdb

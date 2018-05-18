@@ -4,9 +4,8 @@ F:\Workspace\GitProjects\Bfar\Bfar.Repository\bin\Release\Bfar.Extensions.dll
 F:\Workspace\GitProjects\Bfar\Bfar.Repository\bin\Release\Dapper.Contrib.dll
 F:\Workspace\GitProjects\Bfar\Bfar.Repository\bin\Release\Dapper.dll
 F:\Workspace\GitProjects\Bfar\Bfar.Repository\bin\Release\Bfar.Extensions.pdb
-F:\Workspace\GitProjects\Bfar\Bfar.Repository\bin\Release\Dapper.xml
-F:\Workspace\GitProjects\Bfar\Bfar.Repository\bin\Release\Dapper.Contrib.xml
-F:\Workspace\GitProjects\Bfar\Bfar.Repository\obj\Release\Bfar.Repository.csprojResolveAssemblyReference.cache
 F:\Workspace\GitProjects\Bfar\Bfar.Repository\obj\Release\Bfar.Repository.csproj.CoreCompileInputs.cache
 F:\Workspace\GitProjects\Bfar\Bfar.Repository\obj\Release\Bfar.Repository.dll
 F:\Workspace\GitProjects\Bfar\Bfar.Repository\obj\Release\Bfar.Repository.pdb
+F:\Workspace\GitProjects\Bfar\Bfar.Repository\obj\Release\Bfar.Repository.csprojAssemblyReference.cache
+F:\Workspace\GitProjects\Bfar\Bfar.Repository\obj\Release\Bfar.Repository.csproj.CopyComplete

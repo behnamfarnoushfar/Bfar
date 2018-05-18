@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>BfarPersianExtensions</id>
+    <version>1.1.0</version>
+    <title>$title$</title>
+    <authors>Behnam Farnoushfar</authors>
+    <owners>Behnam Farnoushfar</owners>
+    <licenseUrl>https://github.com/behnamfarnoushfar/Bfar</licenseUrl>
+    <projectUrl>https://github.com/behnamfarnoushfar/Bfar</projectUrl>
+    <iconUrl>https://github.com/behnamfarnoushfar/Bfar</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      A set of userfull methods for persian codings:
+      -convert persian numbers to english numbers
+      -Convert to formatted persian datetime from gregorian string/datetime
+      -convert to formatted gregorian datetime from persian string/datetime
+      -Building standard datetime
+    </description>
+    <releaseNotes>beta</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>bfar extensions persian farsi gregorian shamsi miladi date time datetime string convert number numeric</tags>
+  </metadata>
+</package>

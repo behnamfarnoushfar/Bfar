@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bfar.Repository", "Bfar.Rep
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bfar.Patterns", "Bfar.Patterns\Bfar.Patterns.csproj", "{2C9826AE-FBFA-4285-8424-4D2CBB5ACB9B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bfar.Extensions.Persian", "Bfar.Extensions.Persian\Bfar.Extensions.Persian.csproj", "{6FCBDA90-A727-4FF8-BFBE-E67BFE530331}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{2C9826AE-FBFA-4285-8424-4D2CBB5ACB9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C9826AE-FBFA-4285-8424-4D2CBB5ACB9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C9826AE-FBFA-4285-8424-4D2CBB5ACB9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FCBDA90-A727-4FF8-BFBE-E67BFE530331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FCBDA90-A727-4FF8-BFBE-E67BFE530331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FCBDA90-A727-4FF8-BFBE-E67BFE530331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FCBDA90-A727-4FF8-BFBE-E67BFE530331}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

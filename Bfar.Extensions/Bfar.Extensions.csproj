@@ -41,9 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ObjectExtensions.cs" />
+    <Compile Include="StringExtension.cs" />
     <Compile Include="DataTableExtensions.cs" />
     <Compile Include="ListExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Bfar.Extensions.nuspec" />
+    <None Include="BfarExtensions.1.1.0.nupkg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\net471\Bfar.Extensions.dll" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(ProjectDir)bin\Release\* $(ProjectDir)lib\net471\</PostBuildEvent>
+  </PropertyGroup>
 </Project>
