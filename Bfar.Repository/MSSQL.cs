@@ -20,10 +20,10 @@ namespace Bfar.Repository
         private string providerString;
         private IDbConnection _connection;
         private IDbTransaction _currentTransaction;
-        public static MSSQL Factory { get { return new MSSQL(); } } 
+        public static MSSQL Factory { get { return new MSSQL(); } }
         public static MSSQL Connect(string connectionString)
         {
-            return new MSSQL(connectionString); 
+            return new MSSQL(connectionString);
         }
         public string AdHocCommand { get; set; }
         public int MinTimeOut { get; set; }
@@ -326,7 +326,628 @@ namespace Bfar.Repository
                 return new Tuple<List<A>, List<B>, List<C>, List<D>, List<E>, List<F>, List<G>>(a.ToList(), b.ToList(), c.ToList(), d.ToList(), e.ToList(), f.ToList(), g.ToList());
             }
         }
-
+        public Tuple<List<A>, List<B>, List<C>, List<D>, List<E>, List<F>, List<G>, Tuple<List<H>>> ExecuteMARS<A, B, C, D, E, F, G, H>(object Parameters)
+        {
+            using (IDbConnection Con = Connection)
+            {
+                IEnumerable<A> a = null;
+                IEnumerable<B> b = null;
+                IEnumerable<C> c = null;
+                IEnumerable<D> d = null;
+                IEnumerable<E> e = null;
+                IEnumerable<F> f = null;
+                IEnumerable<G> g = null;
+                IEnumerable<H> h = null;
+                Con.Open();
+                var multi = Con.QueryMultiple(AdHocCommand, Parameters, null, MinTimeOut, CommandType.StoredProcedure);
+                a = multi.Read<A>();
+                try
+                {
+                    b = multi.Read<B>();
+                }
+                catch { }
+                try
+                {
+                    c = multi.Read<C>();
+                }
+                catch { }
+                try
+                {
+                    d = multi.Read<D>();
+                }
+                catch { }
+                try
+                {
+                    e = multi.Read<E>();
+                }
+                catch { }
+                try
+                {
+                    f = multi.Read<F>();
+                }
+                catch { }
+                try
+                {
+                    g = multi.Read<G>();
+                }
+                catch { }
+                try
+                {
+                    h = multi.Read<H>();
+                }
+                catch { }
+                return new Tuple<List<A>, List<B>, List<C>, List<D>, List<E>, List<F>, List<G>, Tuple<List<H>>>(a?.ToList(), b?.ToList(), c?.ToList(), d?.ToList(), e?.ToList(), f?.ToList(), g?.ToList(), Tuple.Create(h?.ToList()));
+            }
+        }
+        public Tuple<List<A>, List<B>, List<C>, List<D>, List<E>, List<F>, List<G>, Tuple<List<H>, List<I>>> ExecuteMARS
+        <A, B, C, D, E, F, G, H, I>(object Parameters)
+        {
+            using (IDbConnection Con = Connection)
+            {
+                IEnumerable<A> a = null;
+                IEnumerable<B> b = null;
+                IEnumerable<C> c = null;
+                IEnumerable<D> d = null;
+                IEnumerable<E> e = null;
+                IEnumerable<F> f = null;
+                IEnumerable<G> g = null;
+                IEnumerable<H> h = null;
+                IEnumerable<I> i = null;
+                Con.Open();
+                var multi = Con.QueryMultiple(AdHocCommand, Parameters, null, MinTimeOut, CommandType.StoredProcedure);
+                a = multi.Read<A>();
+                try
+                {
+                    b = multi.Read<B>();
+                }
+                catch { }
+                try
+                {
+                    c = multi.Read<C>();
+                }
+                catch { }
+                try
+                {
+                    d = multi.Read<D>();
+                }
+                catch { }
+                try
+                {
+                    e = multi.Read<E>();
+                }
+                catch { }
+                try
+                {
+                    f = multi.Read<F>();
+                }
+                catch { }
+                try
+                {
+                    g = multi.Read<G>();
+                }
+                catch { }
+                try
+                {
+                    h = multi.Read<H>();
+                }
+                catch { }
+                try
+                {
+                    i = multi.Read<I>();
+                }
+                catch { }
+                return new Tuple<List<A>, List<B>, List<C>, List<D>, List<E>, List<F>, List<G>,
+                    Tuple<List<H>, List<I>>>(
+                    a?.ToList(), b?.ToList(), c?.ToList(), d?.ToList(), e?.ToList(), f?.ToList(), g?.ToList(),
+                    Tuple.Create(h?.ToList(), i?.ToList()));
+            }
+        }
+        public Tuple<List<A>, List<B>, List<C>, List<D>, List<E>, List<F>, List<G>, Tuple<List<H>, List<I>, List<J>>> ExecuteMARS
+        <A, B, C, D, E, F, G, H, I, J>(object Parameters)
+        {
+            using (IDbConnection Con = Connection)
+            {
+                IEnumerable<A> a = null;
+                IEnumerable<B> b = null;
+                IEnumerable<C> c = null;
+                IEnumerable<D> d = null;
+                IEnumerable<E> e = null;
+                IEnumerable<F> f = null;
+                IEnumerable<G> g = null;
+                IEnumerable<H> h = null;
+                IEnumerable<I> i = null;
+                IEnumerable<J> j = null;
+                Con.Open();
+                var multi = Con.QueryMultiple(AdHocCommand, Parameters, null, MinTimeOut, CommandType.StoredProcedure);
+                a = multi.Read<A>();
+                try
+                {
+                    b = multi.Read<B>();
+                }
+                catch { }
+                try
+                {
+                    c = multi.Read<C>();
+                }
+                catch { }
+                try
+                {
+                    d = multi.Read<D>();
+                }
+                catch { }
+                try
+                {
+                    e = multi.Read<E>();
+                }
+                catch { }
+                try
+                {
+                    f = multi.Read<F>();
+                }
+                catch { }
+                try
+                {
+                    g = multi.Read<G>();
+                }
+                catch { }
+                try
+                {
+                    h = multi.Read<H>();
+                }
+                catch { }
+                try
+                {
+                    i = multi.Read<I>();
+                }
+                catch { }
+                try
+                {
+                    j = multi.Read<J>();
+                }
+                catch { }
+                return new Tuple<List<A>, List<B>, List<C>, List<D>, List<E>, List<F>, List<G>,
+                    Tuple<List<H>, List<I>, List<J>>>(
+                    a?.ToList(), b?.ToList(), c?.ToList(), d?.ToList(), e?.ToList(), f?.ToList(), g?.ToList(),
+                    Tuple.Create(h?.ToList(), i?.ToList(), j?.ToList()));
+            }
+        }
+        public Tuple<List<A>, List<B>, List<C>, List<D>, List<E>, List<F>, List<G>, Tuple<List<H>, List<I>, List<J>, List<K>>> ExecuteMARS
+        <A, B, C, D, E, F, G, H, I, J, K>(object Parameters)
+        {
+            using (IDbConnection Con = Connection)
+            {
+                IEnumerable<A> a = null;
+                IEnumerable<B> b = null;
+                IEnumerable<C> c = null;
+                IEnumerable<D> d = null;
+                IEnumerable<E> e = null;
+                IEnumerable<F> f = null;
+                IEnumerable<G> g = null;
+                IEnumerable<H> h = null;
+                IEnumerable<I> i = null;
+                IEnumerable<J> j = null;
+                IEnumerable<K> k = null;
+                Con.Open();
+                var multi = Con.QueryMultiple(AdHocCommand, Parameters, null, MinTimeOut, CommandType.StoredProcedure);
+                a = multi.Read<A>();
+                try
+                {
+                    b = multi.Read<B>();
+                }
+                catch { }
+                try
+                {
+                    c = multi.Read<C>();
+                }
+                catch { }
+                try
+                {
+                    d = multi.Read<D>();
+                }
+                catch { }
+                try
+                {
+                    e = multi.Read<E>();
+                }
+                catch { }
+                try
+                {
+                    f = multi.Read<F>();
+                }
+                catch { }
+                try
+                {
+                    g = multi.Read<G>();
+                }
+                catch { }
+                try
+                {
+                    h = multi.Read<H>();
+                }
+                catch { }
+                try
+                {
+                    i = multi.Read<I>();
+                }
+                catch { }
+                try
+                {
+                    j = multi.Read<J>();
+                }
+                catch { }
+                try
+                {
+                    k = multi.Read<K>();
+                }
+                catch { }
+                return new Tuple<List<A>, List<B>, List<C>, List<D>, List<E>, List<F>, List<G>,
+                    Tuple<List<H>, List<I>, List<J>, List<K>>>(
+                    a?.ToList(), b?.ToList(), c?.ToList(), d?.ToList(), e?.ToList(), f?.ToList(), g?.ToList(),
+                    Tuple.Create(h?.ToList(), i?.ToList(), j?.ToList(), k?.ToList()));
+            }
+        }
+        public Tuple<List<A>, List<B>, List<C>, List<D>, List<E>, List<F>, List<G>, Tuple<List<H>, List<I>, List<J>, List<K>, List<L>>> ExecuteMARS
+        <A, B, C, D, E, F, G, H, I, J, K, L>(object Parameters)
+        {
+            using (IDbConnection Con = Connection)
+            {
+                IEnumerable<A> a = null;
+                IEnumerable<B> b = null;
+                IEnumerable<C> c = null;
+                IEnumerable<D> d = null;
+                IEnumerable<E> e = null;
+                IEnumerable<F> f = null;
+                IEnumerable<G> g = null;
+                IEnumerable<H> h = null;
+                IEnumerable<I> i = null;
+                IEnumerable<J> j = null;
+                IEnumerable<K> k = null;
+                IEnumerable<L> l = null;
+                Con.Open();
+                var multi = Con.QueryMultiple(AdHocCommand, Parameters, null, MinTimeOut, CommandType.StoredProcedure);
+                a = multi.Read<A>();
+                try
+                {
+                    b = multi.Read<B>();
+                }
+                catch { }
+                try
+                {
+                    c = multi.Read<C>();
+                }
+                catch { }
+                try
+                {
+                    d = multi.Read<D>();
+                }
+                catch { }
+                try
+                {
+                    e = multi.Read<E>();
+                }
+                catch { }
+                try
+                {
+                    f = multi.Read<F>();
+                }
+                catch { }
+                try
+                {
+                    g = multi.Read<G>();
+                }
+                catch { }
+                try
+                {
+                    h = multi.Read<H>();
+                }
+                catch { }
+                try
+                {
+                    i = multi.Read<I>();
+                }
+                catch { }
+                try
+                {
+                    j = multi.Read<J>();
+                }
+                catch { }
+                try
+                {
+                    k = multi.Read<K>();
+                }
+                catch { }
+                try
+                {
+                    l = multi.Read<L>();
+                }
+                catch { }
+                return new Tuple<List<A>, List<B>, List<C>, List<D>, List<E>, List<F>, List<G>,
+                    Tuple<List<H>, List<I>, List<J>, List<K>, List<L>>>(
+                    a?.ToList(), b?.ToList(), c?.ToList(), d?.ToList(), e?.ToList(), f?.ToList(), g?.ToList(),
+                    Tuple.Create(h?.ToList(), i?.ToList(), j?.ToList(), k?.ToList(), l?.ToList()));
+            }
+        }
+        public Tuple<List<A>, List<B>, List<C>, List<D>, List<E>, List<F>, List<G>, Tuple<List<H>, List<I>, List<J>, List<K>, List<L>, List<M>>> ExecuteMARS
+        <A, B, C, D, E, F, G, H, I, J, K, L, M>(object Parameters)
+        {
+            using (IDbConnection Con = Connection)
+            {
+                IEnumerable<A> a = null;
+                IEnumerable<B> b = null;
+                IEnumerable<C> c = null;
+                IEnumerable<D> d = null;
+                IEnumerable<E> e = null;
+                IEnumerable<F> f = null;
+                IEnumerable<G> g = null;
+                IEnumerable<H> h = null;
+                IEnumerable<I> i = null;
+                IEnumerable<J> j = null;
+                IEnumerable<K> k = null;
+                IEnumerable<L> l = null;
+                IEnumerable<M> m = null;
+                Con.Open();
+                var multi = Con.QueryMultiple(AdHocCommand, Parameters, null, MinTimeOut, CommandType.StoredProcedure);
+                a = multi.Read<A>();
+                try
+                {
+                    b = multi.Read<B>();
+                }
+                catch { }
+                try
+                {
+                    c = multi.Read<C>();
+                }
+                catch { }
+                try
+                {
+                    d = multi.Read<D>();
+                }
+                catch { }
+                try
+                {
+                    e = multi.Read<E>();
+                }
+                catch { }
+                try
+                {
+                    f = multi.Read<F>();
+                }
+                catch { }
+                try
+                {
+                    g = multi.Read<G>();
+                }
+                catch { }
+                try
+                {
+                    h = multi.Read<H>();
+                }
+                catch { }
+                try
+                {
+                    i = multi.Read<I>();
+                }
+                catch { }
+                try
+                {
+                    j = multi.Read<J>();
+                }
+                catch { }
+                try
+                {
+                    k = multi.Read<K>();
+                }
+                catch { }
+                try
+                {
+                    l = multi.Read<L>();
+                }
+                catch { }
+                try
+                {
+                    m = multi.Read<M>();
+                }
+                catch { }
+                return new Tuple<List<A>, List<B>, List<C>, List<D>, List<E>, List<F>, List<G>,
+                    Tuple<List<H>, List<I>, List<J>, List<K>, List<L>, List<M>>>(
+                    a?.ToList(), b?.ToList(), c?.ToList(), d?.ToList(), e?.ToList(), f?.ToList(), g?.ToList(),
+                    Tuple.Create(h?.ToList(), i?.ToList(), j?.ToList(), k?.ToList(), l?.ToList(), m?.ToList()));
+            }
+        }
+        public Tuple<List<A>, List<B>, List<C>, List<D>, List<E>, List<F>, List<G>, Tuple<List<H>, List<I>, List<J>, List<K>, List<L>, List<M>, List<N>>> ExecuteMARS
+        <A, B, C, D, E, F, G, H, I, J, K, L, M, N>(object Parameters)
+        {
+            using (IDbConnection Con = Connection)
+            {
+                IEnumerable<A> a = null;
+                IEnumerable<B> b = null;
+                IEnumerable<C> c = null;
+                IEnumerable<D> d = null;
+                IEnumerable<E> e = null;
+                IEnumerable<F> f = null;
+                IEnumerable<G> g = null;
+                IEnumerable<H> h = null;
+                IEnumerable<I> i = null;
+                IEnumerable<J> j = null;
+                IEnumerable<K> k = null;
+                IEnumerable<L> l = null;
+                IEnumerable<M> m = null;
+                IEnumerable<N> n = null;
+                Con.Open();
+                var multi = Con.QueryMultiple(AdHocCommand, Parameters, null, MinTimeOut, CommandType.StoredProcedure);
+                a = multi.Read<A>();
+                try
+                {
+                    b = multi.Read<B>();
+                }
+                catch { }
+                try
+                {
+                    c = multi.Read<C>();
+                }
+                catch { }
+                try
+                {
+                    d = multi.Read<D>();
+                }
+                catch { }
+                try
+                {
+                    e = multi.Read<E>();
+                }
+                catch { }
+                try
+                {
+                    f = multi.Read<F>();
+                }
+                catch { }
+                try
+                {
+                    g = multi.Read<G>();
+                }
+                catch { }
+                try
+                {
+                    h = multi.Read<H>();
+                }
+                catch { }
+                try
+                {
+                    i = multi.Read<I>();
+                }
+                catch { }
+                try
+                {
+                    j = multi.Read<J>();
+                }
+                catch { }
+                try
+                {
+                    k = multi.Read<K>();
+                }
+                catch { }
+                try
+                {
+                    l = multi.Read<L>();
+                }
+                catch { }
+                try
+                {
+                    m = multi.Read<M>();
+                }
+                catch { }
+                try
+                {
+                    n = multi.Read<N>();
+                }
+                catch { }
+                return new Tuple<List<A>, List<B>, List<C>, List<D>, List<E>, List<F>, List<G>,
+                    Tuple<List<H>, List<I>, List<J>, List<K>, List<L>, List<M>, List<N>>>(
+                    a?.ToList(), b?.ToList(), c?.ToList(), d?.ToList(), e?.ToList(), f?.ToList(), g?.ToList(),
+                    Tuple.Create(h?.ToList(), i?.ToList(), j?.ToList(), k?.ToList(), l?.ToList(), m?.ToList(), n?.ToList()));
+            }
+        }
+        public Tuple<List<A>, List<B>, List<C>, List<D>, List<E>, List<F>, List<G>, Tuple<List<H>, List<I>, List<J>, List<K>, List<L>, List<M>, List<N>, Tuple<List<O>>>> ExecuteMARS
+        <A, B, C, D, E, F, G, H, I, J, K, L, M, N, O>(object Parameters)
+        {
+            using (IDbConnection Con = Connection)
+            {
+                #region results
+                IEnumerable<A> a = null;
+                IEnumerable<B> b = null;
+                IEnumerable<C> c = null;
+                IEnumerable<D> d = null;
+                IEnumerable<E> e = null;
+                IEnumerable<F> f = null;
+                IEnumerable<G> g = null;
+                IEnumerable<H> h = null;
+                IEnumerable<I> i = null;
+                IEnumerable<J> j = null;
+                IEnumerable<K> k = null;
+                IEnumerable<L> l = null;
+                IEnumerable<M> m = null;
+                IEnumerable<N> n = null;
+                IEnumerable<O> o = null;
+                #endregion
+                Con.Open();
+                var multi = Con.QueryMultiple(AdHocCommand, Parameters, null, MinTimeOut, CommandType.StoredProcedure);
+                a = multi.Read<A>();
+                try
+                {
+                    b = multi.Read<B>();
+                }
+                catch { }
+                try
+                {
+                    c = multi.Read<C>();
+                }
+                catch { }
+                try
+                {
+                    d = multi.Read<D>();
+                }
+                catch { }
+                try
+                {
+                    e = multi.Read<E>();
+                }
+                catch { }
+                try
+                {
+                    f = multi.Read<F>();
+                }
+                catch { }
+                try
+                {
+                    g = multi.Read<G>();
+                }
+                catch { }
+                try
+                {
+                    h = multi.Read<H>();
+                }
+                catch { }
+                try
+                {
+                    i = multi.Read<I>();
+                }
+                catch { }
+                try
+                {
+                    j = multi.Read<J>();
+                }
+                catch { }
+                try
+                {
+                    k = multi.Read<K>();
+                }
+                catch { }
+                try
+                {
+                    l = multi.Read<L>();
+                }
+                catch { }
+                try
+                {
+                    m = multi.Read<M>();
+                }
+                catch { }
+                try
+                {
+                    n = multi.Read<N>();
+                }
+                catch { }
+                try
+                {
+                    o = multi.Read<O>();
+                }
+                catch { }
+                return new Tuple<List<A>, List<B>, List<C>, List<D>, List<E>, List<F>, List<G>,
+                    Tuple<List<H>, List<I>, List<J>, List<K>, List<L>, List<M>, List<N>, Tuple<List<O>>>>(
+                    a?.ToList(), b?.ToList(), c?.ToList(), d?.ToList(), e?.ToList(), f?.ToList(), g?.ToList(),
+                    Tuple.Create(h?.ToList(), i?.ToList(), j?.ToList(), k?.ToList(), l?.ToList(), m?.ToList(), n?.ToList(), o?.ToList()));
+            }
+        }
         public void BulkUpdate(string[] Columns, object Values, string UpdateExpression)
         {
             try

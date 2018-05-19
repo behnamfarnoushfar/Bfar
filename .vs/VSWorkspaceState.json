@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Bfar.Extensions.Persian"
   ],
-  "SelectedNode": "\\Bfar.sln",
+  "SelectedNode": "\\Bfar.Extensions.Persian\\StringExtension.cs",
   "PreviewInSolutionExplorer": false
 }
