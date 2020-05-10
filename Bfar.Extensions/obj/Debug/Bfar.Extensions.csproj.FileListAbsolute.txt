@@ -8,3 +8,4 @@ E:\Workspace\GitProjects\Bfar\Bfar.Extensions\obj\Debug\Bfar.Extensions.dll
 E:\Workspace\GitProjects\Bfar\Bfar.Extensions\obj\Debug\Bfar.Extensions.pdb
 E:\Workspace\GitProjects\Bfar\Bfar.Extensions\bin\Debug\Bfar.Extensions.dll
 E:\Workspace\GitProjects\Bfar\Bfar.Extensions\bin\Debug\Bfar.Extensions.pdb
+E:\Workspace\GitProjects\Bfar\Bfar.Extensions\obj\Debug\Bfar.Extensions.csprojAssemblyReference.cache

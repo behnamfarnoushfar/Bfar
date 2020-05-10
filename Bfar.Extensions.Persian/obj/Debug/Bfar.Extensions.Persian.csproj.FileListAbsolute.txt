@@ -9,3 +9,4 @@ E:\Workspace\GitProjects\Bfar\Bfar.Extensions.Persian\bin\Debug\Bfar.Extensions.
 E:\Workspace\GitProjects\Bfar\Bfar.Extensions.Persian\obj\Debug\Bfar.Extensions.Persian.csproj.CoreCompileInputs.cache
 E:\Workspace\GitProjects\Bfar\Bfar.Extensions.Persian\obj\Debug\Bfar.Extensions.Persian.dll
 E:\Workspace\GitProjects\Bfar\Bfar.Extensions.Persian\obj\Debug\Bfar.Extensions.Persian.pdb
+E:\Workspace\GitProjects\Bfar\Bfar.Extensions.Persian\obj\Debug\Bfar.Extensions.Persian.csprojAssemblyReference.cache

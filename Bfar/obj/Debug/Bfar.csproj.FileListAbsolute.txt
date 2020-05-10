@@ -8,3 +8,4 @@ E:\Workspace\GitProjects\Bfar\Bfar\bin\Debug\Bfar.pdb
 E:\Workspace\GitProjects\Bfar\Bfar\obj\Debug\Bfar.csproj.CoreCompileInputs.cache
 E:\Workspace\GitProjects\Bfar\Bfar\obj\Debug\Bfar.dll
 E:\Workspace\GitProjects\Bfar\Bfar\obj\Debug\Bfar.pdb
+E:\Workspace\GitProjects\Bfar\Bfar\obj\Debug\Bfar.csprojAssemblyReference.cache
