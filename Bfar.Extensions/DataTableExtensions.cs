@@ -37,7 +37,7 @@ namespace Bfar.Extensions
         //}
         public static List<T> ToList<T>(this DataTable dt)
         {
-            if (dt==null) return null;
+            if (dt.IsNull()) return null;
             const BindingFlags flags = BindingFlags.Public | BindingFlags.Instance;
             var columnNames = dt.Columns.Cast<DataColumn>()
                 .Select(c => c.ColumnName)
@@ -49,7 +49,7 @@ namespace Bfar.Extensions
 
                 foreach (var properties in objectProperties.Where(properties => columnNames.Contains(properties.Name) && dataRow[properties.Name] != DBNull.Value))
                 {
-
+                    
                     properties.SetValue(instanceOfT, Convert.ChangeType(dataRow[properties.Name], Nullable.GetUnderlyingType(properties.PropertyType) ?? properties.PropertyType), null);
                 }
                 return instanceOfT;

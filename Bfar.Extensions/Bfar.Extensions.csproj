@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DateTimeExtension.cs" />
+    <Compile Include="MailExtensions.cs" />
     <Compile Include="ObjectExtensions.cs" />
     <Compile Include="StringExtension.cs" />
     <Compile Include="DataTableExtensions.cs" />

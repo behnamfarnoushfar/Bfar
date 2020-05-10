@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>BfarExtensionsCore</id>
+    <version>1.0.0</version>
+    <title>$title$</title>
+    <authors>Behnam Farnoushfar</authors>
+    <owners>Behnam Farnoushfar</owners>
+    <licenseUrl>https://github.com/behnamfarnoushfar/Bfar</licenseUrl>
+    <projectUrl>https://github.com/behnamfarnoushfar/Bfar</projectUrl>
+    <iconUrl>https://github.com/behnamfarnoushfar/Bfar</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      .net core implementation of bfar.extensions
+    </description>
+    <releaseNotes>beta</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>bfar extensions ListToDataTable DataTableToList</tags>
+  </metadata>
+</package>

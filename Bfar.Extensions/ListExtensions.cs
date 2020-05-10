@@ -32,7 +32,7 @@ namespace Bfar.Extensions
             }
             return table;
         }
-        public static DataTable ToDataTable<T>(this IList<T> data, bool UsePersianCalendar = false, TranslateColumnNameCallBack callback = null)
+        public static DataTable ToDataTable<T>(this IList<T> data,bool UsePersianCalendar=false,TranslateColumnNameCallBack callback=null)
         {
             if (data == null || data.Count == 0)
                 return null;
@@ -44,22 +44,22 @@ namespace Bfar.Extensions
             {
                 PropertyDescriptor prop = props[i];
                 //Type type = Nullable.GetUnderlyingType(prop.PropertyType) ?? prop.PropertyType;
-                table.Columns.Add(callback != null ? callback(prop.Name) : prop.Name/*, Nullable.GetUnderlyingType(prop.PropertyType) ?? prop.PropertyType*/);
+                table.Columns.Add(callback!=null?callback(prop.Name): prop.Name/*, Nullable.GetUnderlyingType(prop.PropertyType) ?? prop.PropertyType*/);
             }
             object[] values = new object[props.Count];
             foreach (T item in data)
             {
                 for (int i = 0; i < values.Length; i++)
                 {
-                    if (props[i].GetValue(item) != null && ((Nullable.GetUnderlyingType(props[i].PropertyType) ?? props[i].PropertyType) == typeof(DateTime)
-                        || (dtx.IsMatch(props[i].GetValue(item).ToString())))
+                    if (props[i].GetValue(item) != null &&((Nullable.GetUnderlyingType(props[i].PropertyType) ?? props[i].PropertyType) == typeof(DateTime)
+                        || (dtx.IsMatch(props[i].GetValue(item).ToString()) ))
                         && UsePersianCalendar)
                     {
 
                         try
                         {
 
-                            values[i] = Convert.ToDateTime(props[i].GetValue(item).ToString(), System.Globalization.CultureInfo.GetCultureInfo("en").DateTimeFormat)/*.ToFullPersianString()*/;
+                        values[i] = Convert.ToDateTime(props[i].GetValue(item).ToString(), System.Globalization.CultureInfo.GetCultureInfo("en").DateTimeFormat).ToFullPersianString();
                         }
                         catch (Exception ex)
                         {
@@ -94,7 +94,7 @@ namespace Bfar.Extensions
             {
                 for (int i = 0; i < values.Length; i++)
                 {
-                    values[i] = props[i].GetValue(item) ?? DBNull.Value;
+                    values[i] = props[i].GetValue(item)?? DBNull.Value;
                 }
                 table.Rows.Add(values);
             }

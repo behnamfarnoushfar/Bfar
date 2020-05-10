@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>BfarRepository</id>
-    <version>1.0.0</version>
+    <version>1.1.2</version>
     <title>BfarRepository</title>
     <authors>Behnam Farnoushfar</authors>
     <owners>Behnam Farnoushfar</owners>
@@ -12,7 +12,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Yet another repository base on dapper with fluent api.</description>
     <releaseNotes>beta testing.</releaseNotes>
-    <copyright>Copyright 2018</copyright>
+    <copyright>Copyright 2019</copyright>
     <tags>repository dapper fluentapi</tags>
   </metadata>
 </package>

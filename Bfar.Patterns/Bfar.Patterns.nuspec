@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>BfarPatterns</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>BfarPatterns</title>
     <authors>Behnam Farnoushfar</authors>
     <owners>Behnam Farnoushfar</owners>
@@ -14,7 +14,7 @@
     -factory method
     </description>
     <releaseNotes>beta</releaseNotes>
-    <copyright>Copyright 2018</copyright>
+    <copyright>Copyright 2019</copyright>
     <tags>bfar pattern factory method</tags>
   </metadata>
 </package>
