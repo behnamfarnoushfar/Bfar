@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DateTimeExtension.cs" />
+    <Compile Include="Int64Extensions.cs" />
     <Compile Include="StringExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

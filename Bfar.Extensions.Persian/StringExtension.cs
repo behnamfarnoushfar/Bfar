@@ -10,6 +10,9 @@ namespace Bfar.Extensions.Persian
     {
         private static Regex mobileRegex = new Regex(@"^09\d{9}$");
         private static Regex mobileSystemRegex = new Regex(@"^989\d{9}$");
+        private static string mcodeRegex = "^[0-9]{10,10}$";
+        private static Regex regMCode = new Regex("^[0-9]{10,10}$");
+
         public static DateTime ToGregorianDateTime(this string data)
         {
             //PersianCalendar pc = new PersianCalendar();
@@ -86,7 +89,34 @@ namespace Bfar.Extensions.Persian
             System.Threading.Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(culture.Name);
             return culture;
         }
+        public static bool IsValidNationalCode(this string NationalCode)
+        {
 
+            if (!regMCode.IsMatch(NationalCode))
+            {
+                return false;
+            }
+            NationalCode = NationalCode + "+";
+            char[] array = NationalCode.ToCharArray();
+            Array.Reverse(array);
+            int num = 0;
+            int num2 = 0;
+            int num3 = 0;
+            for (int i = 2; i <= 10; i++)
+            {
+                num += Convert.ToInt32(array[i].ToString()) * i;
+            }
+            num2 = num % 0xb;
+            if (num2 < 2)
+            {
+                num3 = num2;
+            }
+            else
+            {
+                num3 = 11 - num2;
+            }
+            return (num3 == Convert.ToInt32(array[1].ToString()));
+        }
         private static CultureInfo SwitchCurrentCultureInfo(string culture)
         {
             var currentUI = System.Threading.Thread.CurrentThread.CurrentUICulture;

@@ -5,7 +5,6 @@ F:\Workspace\GitProjects\Bfar\Bfar.Extensions\obj\Release\Bfar.Extensions.dll
 F:\Workspace\GitProjects\Bfar\Bfar.Extensions\obj\Release\Bfar.Extensions.pdb
 E:\Workspace\GitProjects\Bfar\Bfar.Extensions\bin\Release\Bfar.Extensions.dll
 E:\Workspace\GitProjects\Bfar\Bfar.Extensions\bin\Release\Bfar.Extensions.pdb
-E:\Workspace\GitProjects\Bfar\Bfar.Extensions\obj\Release\Bfar.Extensions.csprojAssemblyReference.cache
 E:\Workspace\GitProjects\Bfar\Bfar.Extensions\obj\Release\Bfar.Extensions.csproj.CoreCompileInputs.cache
 E:\Workspace\GitProjects\Bfar\Bfar.Extensions\obj\Release\Bfar.Extensions.dll
 E:\Workspace\GitProjects\Bfar\Bfar.Extensions\obj\Release\Bfar.Extensions.pdb
