@@ -1,8 +1,11 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
+  <dependencies>
+      <group targetFramework="netcoreapp3.1" />
+</dependencies>
     <id>BfarRepositoryCore</id>
-    <version>1.0.0</version>
+    <version>2.0.1</version>
     <title>BfarRepositoryCore</title>
     <authors>Behnam Farnoushfar</authors>
     <owners>Behnam Farnoushfar</owners>
@@ -11,8 +14,8 @@
     <iconUrl>https://github.com/behnamfarnoushfar/Bfar</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>.net core implementation of bfar.repository</description>
-    <releaseNotes>beta testing.</releaseNotes>
-    <copyright>Copyright 2019</copyright>
+    <releaseNotes>improve performance and supportt for .netcore 3.1</releaseNotes>
+    <copyright>Copyright 2020</copyright>
     <tags>repository dapper fluentapi</tags>
   </metadata>
 </package>

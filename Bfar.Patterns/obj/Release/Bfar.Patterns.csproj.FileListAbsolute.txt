@@ -8,3 +8,4 @@ E:\Workspace\GitProjects\Bfar\Bfar.Patterns\bin\Release\Bfar.Patterns.pdb
 E:\Workspace\GitProjects\Bfar\Bfar.Patterns\obj\Release\Bfar.Patterns.csproj.CoreCompileInputs.cache
 E:\Workspace\GitProjects\Bfar\Bfar.Patterns\obj\Release\Bfar.Patterns.dll
 E:\Workspace\GitProjects\Bfar\Bfar.Patterns\obj\Release\Bfar.Patterns.pdb
+E:\Workspace\GitProjects\Bfar\Bfar.Patterns\obj\Release\Bfar.Patterns.csprojAssemblyReference.cache

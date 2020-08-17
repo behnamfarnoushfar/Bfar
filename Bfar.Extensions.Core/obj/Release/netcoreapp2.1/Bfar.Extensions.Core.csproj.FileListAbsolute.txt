@@ -10,9 +10,9 @@ F:\Workspace\GitProjects\Bfar\Bfar.Extensions.Core\obj\Release\netcoreapp2.1\Bfa
 E:\Workspace\GitProjects\Bfar\Bfar.Extensions.Core\bin\Release\netcoreapp2.1\Bfar.Extensions.Core.deps.json
 E:\Workspace\GitProjects\Bfar\Bfar.Extensions.Core\bin\Release\netcoreapp2.1\Bfar.Extensions.Core.dll
 E:\Workspace\GitProjects\Bfar\Bfar.Extensions.Core\bin\Release\netcoreapp2.1\Bfar.Extensions.Core.pdb
-E:\Workspace\GitProjects\Bfar\Bfar.Extensions.Core\obj\Release\netcoreapp2.1\Bfar.Extensions.Core.csprojAssemblyReference.cache
 E:\Workspace\GitProjects\Bfar\Bfar.Extensions.Core\obj\Release\netcoreapp2.1\Bfar.Extensions.Core.csproj.CoreCompileInputs.cache
 E:\Workspace\GitProjects\Bfar\Bfar.Extensions.Core\obj\Release\netcoreapp2.1\Bfar.Extensions.Core.AssemblyInfoInputs.cache
 E:\Workspace\GitProjects\Bfar\Bfar.Extensions.Core\obj\Release\netcoreapp2.1\Bfar.Extensions.Core.AssemblyInfo.cs
 E:\Workspace\GitProjects\Bfar\Bfar.Extensions.Core\obj\Release\netcoreapp2.1\Bfar.Extensions.Core.dll
 E:\Workspace\GitProjects\Bfar\Bfar.Extensions.Core\obj\Release\netcoreapp2.1\Bfar.Extensions.Core.pdb
+E:\Workspace\GitProjects\Bfar\Bfar.Extensions.Core\obj\Release\netcoreapp2.1\Bfar.Extensions.Core.csprojAssemblyReference.cache

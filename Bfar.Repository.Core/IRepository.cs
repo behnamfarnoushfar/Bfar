@@ -4,6 +4,9 @@ using System.Data;
 
 namespace Bfar.Repository.Core
 {
+    /// <summary>
+    /// Obsolete
+    /// </summary>
     public interface IRepository
     {
         string AdHocCommand { get; set; }
@@ -38,5 +41,7 @@ namespace Bfar.Repository.Core
         Tuple<List<A>, List<B>> ExecuteMARS<A, B>(object Parameters);
         void BulkInsert<T>(IList<T> Data, string Name) where T : class;
         void BulkInsertChain<T>(IList<T> Data, string Name) where T : class;
+        bool RollbackTransaction();
+        bool CommitTransaction();
     }
 }
