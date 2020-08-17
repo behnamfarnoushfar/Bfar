@@ -10,10 +10,11 @@ namespace Bfar.Repository.Core
 {
     public class ChainedBulkMSSQL : ITransactionalBulkRepository
     {
-        private DbProviderFactory _provider;
-        private string connectionString;
-        private string providerString;
-        private IDbConnection _connection;
+        private const string providerString = "System.Data.SqlClient";
+        private readonly string connectionString;
+        public static SimpleMSSQL Factory(string server, string databaseName, string userName, string password) { return new SimpleMSSQL(server, databaseName, userName, password); }
+
+        private SqlConnection _connection;
         private IDbTransaction _currentTransaction;
         public static ChainedBulkMSSQL Factory { get { return new ChainedBulkMSSQL(); } }
         public static ChainedBulkMSSQL Connect(string connectionString)

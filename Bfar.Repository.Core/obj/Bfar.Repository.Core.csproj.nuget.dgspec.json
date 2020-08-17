@@ -68,7 +68,7 @@
       }
     },
     "E:\\Workspace\\GitProjects\\Bfar\\Bfar.Repository.Core\\Bfar.Repository.Core.csproj": {
-      "version": "2.0.1",
+      "version": "2.2.0",
       "restore": {
         "projectUniqueName": "E:\\Workspace\\GitProjects\\Bfar\\Bfar.Repository.Core\\Bfar.Repository.Core.csproj",
         "projectName": "Bfar.Repository.Core",
@@ -116,10 +116,6 @@
             "Dapper.Contrib": {
               "target": "Package",
               "version": "[1.60.1, )"
-            },
-            "System.Configuration.ConfigurationManager": {
-              "target": "Package",
-              "version": "[4.5.0, )"
             }
           },
           "imports": [
