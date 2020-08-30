@@ -15,11 +15,17 @@ namespace Bfar.Repository.Core
     public class SimpleMSSQL : ISimpleRepository
     {
         private const string providerString = "System.Data.SqlClient";
-        private readonly string connectionString;
+        private string _connectionString;
         public static SimpleMSSQL Factory(string server, string databaseName, string userName, string password) { return new SimpleMSSQL(server,databaseName,userName,password);  }
         public static SimpleMSSQL Connect(string connectionString)
         {
             return new SimpleMSSQL(connectionString);
+        }
+        public SimpleMSSQL BuildRepository(string server, string databaseName, string userName, string password) 
+        {
+            MinTimeOut = 120;
+            _connectionString = $"Server = {server}; Database = {databaseName}; User Id = {userName}; Password = {password};";
+            return this;
         }
         public string AdHocCommand { get; set; }
         public int MinTimeOut { get; set; }
@@ -29,7 +35,7 @@ namespace Bfar.Repository.Core
             get
             {
                 var connection = new SqlConnection();
-                connection.ConnectionString = connectionString;
+                connection.ConnectionString = _connectionString;
                 return connection;
             }
         }
@@ -37,12 +43,12 @@ namespace Bfar.Repository.Core
         public SimpleMSSQL(string server,string databaseName,string userName,string password)
         {
             MinTimeOut = 120;
-            connectionString = $"Server = {server}; Database = {databaseName}; User Id = {userName}; Password = {password};";
+            _connectionString = $"Server = {server}; Database = {databaseName}; User Id = {userName}; Password = {password};";
         }
         public SimpleMSSQL(string ConnectionString)
         {
             MinTimeOut = 120;
-            connectionString = ConnectionString;
+            _connectionString = ConnectionString;
         }
         public long Add<K>(K model) where K : class
         {

@@ -2534,7 +2534,7 @@
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
-    "version": "2.2.0",
+    "version": "2.3.0",
     "restore": {
       "projectUniqueName": "E:\\Workspace\\GitProjects\\Bfar\\Bfar.Repository.Core\\Bfar.Repository.Core.csproj",
       "projectName": "Bfar.Repository.Core",

@@ -15,4 +15,3 @@ E:\Workspace\GitProjects\Bfar\Bfar.Extensions.Core\obj\Debug\netcoreapp2.1\Bfar.
 E:\Workspace\GitProjects\Bfar\Bfar.Extensions.Core\bin\Debug\netcoreapp2.1\Bfar.Extensions.Core.deps.json
 E:\Workspace\GitProjects\Bfar\Bfar.Extensions.Core\bin\Debug\netcoreapp2.1\Bfar.Extensions.Core.dll
 E:\Workspace\GitProjects\Bfar\Bfar.Extensions.Core\bin\Debug\netcoreapp2.1\Bfar.Extensions.Core.pdb
-E:\Workspace\GitProjects\Bfar\Bfar.Extensions.Core\obj\Debug\netcoreapp2.1\Bfar.Extensions.Core.csprojAssemblyReference.cache
