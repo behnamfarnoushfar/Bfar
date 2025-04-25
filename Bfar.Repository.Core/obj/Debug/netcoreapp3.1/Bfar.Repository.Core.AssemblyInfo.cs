@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bfar.Repository.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("2.3.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.3.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.3.0+5abc020ac23461f3319e156e2b0394aca0415d5f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bfar.Repository.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bfar.Repository.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("2.3.0.0")]

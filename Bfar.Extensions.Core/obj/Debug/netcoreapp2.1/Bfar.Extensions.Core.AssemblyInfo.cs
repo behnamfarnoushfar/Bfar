@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bfar.Extensions.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5abc020ac23461f3319e156e2b0394aca0415d5f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bfar.Extensions.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bfar.Extensions.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

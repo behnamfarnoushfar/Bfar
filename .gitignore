@@ -1,8 +1,42 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+﻿# Visual Studio related files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
-/.vs/
-/obj/
-/bin/
-/Bfar/obj/Debug/Bfar.csproj.AssemblyReference.cache
+# Build folders
+bin/
+obj/
+out/
+
+# Including NuGet Packages
+packages/
+*.nupkg
+*.lock.json
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Node.js folders
+node_modules/
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+*.db
+
+# IDE configuration files
+*.vscode/
+*.idea/
+
+# Other system files
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
