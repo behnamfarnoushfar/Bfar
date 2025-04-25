@@ -2,5 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/deliver-nugets.ps1
-/.vs/Bfar
+/.vs/
+/obj/
+/bin/
+/Bfar/obj/Debug/Bfar.csproj.AssemblyReference.cache
