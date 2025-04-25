@@ -1,6 +1,6 @@
 ﻿namespace Bfar.XCutting.Abstractions.Models
 {
-    public sealed class GeneralViewModel
+    public  class GeneralViewModel: InputFormModel
     {
         public bool IsUnderconstruction { get; set; }
         public bool IsSuccessFull { get; set; }
@@ -15,7 +15,9 @@
         public string? ResultMessage { get; set; }
         public string? CurrentStyles { get; set; }
         public string? CurrentScripts { get; set; }
-        List<GeneralViewModel>? SubResults { get; set; }
-        List<InputFormModel>? Forms { get; set; }
+        public required string TargetResource { get; set; }
+        public required string TargetAction { get; set; }
+        public List<GeneralViewModel>? SubViews { get; set; }
+        public List<InputFormModel>? Forms { get; set; }
     }
 }
