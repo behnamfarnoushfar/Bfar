@@ -1,6 +1,6 @@
-﻿namespace Bfar.XCutting.Abstractions.Decorators
+﻿namespace Bfar.XCutting.Abstractions.Adapters
 {
-    public interface IJsonDecorator
+    public interface IJsonParserAdapter
     {
         public string Serialize<T>(T data);
         public T? Derialize<T>(string data);
