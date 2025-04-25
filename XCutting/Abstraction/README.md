@@ -9,7 +9,7 @@ Adapters (آداپتورها):
 - IRestClientAdapter.cs
 
 
-ApplicationServices (خدمات برنامه):
+ApplicationServices :
 - ICommandService.cs
 - IEMailService.cs
 - INotificationService.cs
@@ -18,22 +18,23 @@ ApplicationServices (خدمات برنامه):
 - ITableResultService.cs
 
 
-Dtos (اشیاء انتقال داده):
+Dtos :
 - DbGeneralResponse.cs
 - GeneralResponse.cs
 - MenuDto.cs
 - RequestCaptchaDto.cs
 
 
-Infrastructures (زیرساخت‌ها):
+Infrastructures :
 - IRepository.cs
 - IUnitOfWork.cs
 
 
-Models (مدل‌ها):
+Models :
 - ConnectionConfigurationModel.cs
-- GeneralViewModel.cs
-- InputFormModel.cs
+- InputViewModel.cs
+- SubViewModel.cs
+- ViewElementModel.cs
 - MessageConstruct.cs
 - NameValueModel.cs
 

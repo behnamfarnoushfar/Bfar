@@ -1,7 +1,16 @@
 ﻿namespace Bfar.XCutting.Abstractions.Models
 {
-    public  class GeneralViewModel: InputFormModel
+    public class SubViewModel : ViewElementModel
     {
+        public SubViewModel()
+        {
+            HasError = false;
+            IsUnAuthorized= false;
+            IsUnderconstruction= false;
+            HasWarning= false;
+            IsSuccessFull = true;
+
+        }
         public bool IsUnderconstruction { get; set; }
         public bool IsSuccessFull { get; set; }
         public bool HasError { get; set; }
@@ -15,9 +24,9 @@
         public string? ResultMessage { get; set; }
         public string? CurrentStyles { get; set; }
         public string? CurrentScripts { get; set; }
-        public required string TargetResource { get; set; }
-        public required string TargetAction { get; set; }
-        public List<GeneralViewModel>? SubViews { get; set; }
-        public List<InputFormModel>? Forms { get; set; }
+        public string? TargetResource { get; set; }
+        public string? TargetAction { get; set; }
+        public List<SubViewModel>? Childs { get; set; }
+        public List<InputViewModel>? Inputs { get; set; }
     }
 }

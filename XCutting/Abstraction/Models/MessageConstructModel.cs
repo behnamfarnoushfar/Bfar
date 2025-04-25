@@ -1,6 +1,6 @@
 ﻿namespace Bfar.XCutting.Abstractions.Models
 {
-    public sealed class MessageConstruct
+    public sealed class MessageConstructModel
     {
         public uint Command { get; set; }
         public string? Resource { get; set; }
@@ -13,7 +13,7 @@
         public string? Payload { get; set; }
         public bool DirectPayload { get; set; }
         public string? Parameters { get; set; }
-        public List<MessageConstruct>? SubMessages { get; set; }
+        public List<MessageConstructModel>? SubMessages { get; set; }
         public bool IsMultipart { get; set; }
         public Stream? InternalBuffer { get; set; }
         public string Title { get; set; }

@@ -7,8 +7,8 @@
 		<RootNamespace>Bfar.XCutting.Abstractions</RootNamespace>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageId>Bfar.XCutting.Abstractions</PackageId>
-		<Version>1.0.32.13</Version>
-		<Authors>Behnam</Authors>
+		<Version>1.7.32.22</Version>
+		<Authors>Behnam Farnoushfar</Authors>
 		<Description>
 			Abstractions classes:You can use these classes along side your project or other projects of this repository
 
