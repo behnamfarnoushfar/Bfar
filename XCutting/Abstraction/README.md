@@ -11,6 +11,8 @@ Adapters (آداپتورها):
 
 ApplicationServices :
 - ICommandService.cs
+- ISessionService.cs
+- IAccessControl.cs
 - IEMailService.cs
 - INotificationService.cs
 - IQueryService.cs
