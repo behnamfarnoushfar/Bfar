@@ -7,14 +7,17 @@
 		<RootNamespace>Bfar.XCutting.Abstractions</RootNamespace>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageId>Bfar.XCutting.Abstractions</PackageId>
-		<Version>1.0.2.8</Version>
+		<Version>1.0.28.9</Version>
 		<Authors>Behnam</Authors>
-		<Description>Abstractions classes </Description>
-		<ProjectUrl>https://github.com/YourAccount/YourRepository</ProjectUrl>
+		<Description>
+			Abstractions classes:You can use these classes along side your project or other projects of this repository
+
+		</Description>
+		<ProjectUrl>https://github.com/behnamfarnoushfar/Bfar</ProjectUrl>
 		<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryType>git</RepositoryType>
-		<RepositoryUrl>https://github.com/YourAccount/YourRepository</RepositoryUrl>
+		<RepositoryUrl>https://github.com/behnamfarnoushfar/Bfar</RepositoryUrl>
 		<ReleaseNotes>Initial release with basic abstractions classes.</ReleaseNotes>
 		<Copyright>Copyright © 2030 Behnam</Copyright>
 		<Tags>Cross-Cutting, Abstractions, .NET, Utilities</Tags>
