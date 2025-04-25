@@ -23,7 +23,7 @@
 		<Tags>Cross-Cutting, Abstractions, .NET, Utilities</Tags>
 	</PropertyGroup>
 	<Target Name="PostPack" AfterTargets="Pack" Condition="'$(Configuration)' == 'Release'">
-		<Exec Command="dotnet nuget push $(MSBuildProjectDirectory)\$(PackageOutputPath)$(PackageId).$(Version).nupkg --source https://api.nuget.org/v3/index.json -k oy2gowa6mpsjgbwyugtatwjetmc6o5henajtvmcxbxdswe" />
+		<Exec Command="dotnet nuget push $(MSBuildProjectDirectory)\$(PackageOutputPath)$(PackageId).$(Version).nupkg --source https://api.nuget.org/v3/index.json -k " />
 	</Target>
 	<ItemGroup>
 		<None Include="LICENSE.md" Pack="true" PackagePath="\" />
