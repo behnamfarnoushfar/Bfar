@@ -12,10 +12,11 @@
         public NameValueModel[]? Attributes { get; set; }
         public NameValueModel[]? Bindings { get; set; }
         public NameValueModel[]? InlineEvents { get; set; }
-        public string[]? Values { get; set; }
-        public string? DefaultValue { get; set; }
+        public NameValueModel[]? Values { get; set; }
+        public NameValueModel? DefaultValue { get; set; }
         public bool IsHidden { get; set; }
         public bool IsVisible { get; set; }
         public bool IsDisabled { get; set; }
+        public InputFormModel[]? SubInputs { get; set; }
     }
 }
