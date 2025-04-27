@@ -3,7 +3,7 @@
     public class InputViewModel : ViewElementModel
     {
 
-        public required string FieldType { get; set; }
+        public required string InputType { get; set; }
 
         public string? Hint { get; set; }
         public string[]? ClassStyles { get; set; }

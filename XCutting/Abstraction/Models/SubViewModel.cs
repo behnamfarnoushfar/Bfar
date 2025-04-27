@@ -26,7 +26,13 @@
         public string? CurrentScripts { get; set; }
         public string? TargetResource { get; set; }
         public string? TargetAction { get; set; }
+        /// <summary>
+        /// None-Inuput elements
+        /// </summary>
         public List<SubViewModel>? Childs { get; set; }
+        /// <summary>
+        /// only input elements
+        /// </summary>
         public List<InputViewModel>? Inputs { get; set; }
     }
 }

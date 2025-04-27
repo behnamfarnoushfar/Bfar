@@ -9,6 +9,7 @@
             IsHidden = false;
         }
         public required string Name { get; set; }
+        public required string ElementType { get; set; }
         public required string Id { get; set; }
         public string? Title { get; set; }
         public string[]? InlineStyles { get; set; }
