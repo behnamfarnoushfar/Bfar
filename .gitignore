@@ -41,3 +41,4 @@ $RECYCLE.BIN/
 *.temp
 *.log
 
+/.vs/VSWorkspaceState.json
