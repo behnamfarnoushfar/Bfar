@@ -1,45 +1,51 @@
 ﻿# Bfar.XCutting.Abstractions
 Abstraction classes for Cross-Cutting Concerns in .NET projects.
 Adapters :
-- ICircuitBreakerAdapter.cs
-- IDateTimeDecorator.cs
-- IJsonParserAdapter.cs
-- IMessagingAdapter.cs
-- IRepositoryAdapter.cs
-- IRestClientAdapter.cs
+- ICircuitBreakerAdapter
+- IDateTimeDecorator
+- IJsonParserAdapter
+- IMessagingAdapter
+- IRepositoryAdapter
+- IRestClientAdapter
 
 
 ApplicationServices :
-- ICommandService.cs
-- ISessionService.cs
-- IAccessControl.cs
-- IEMailService.cs
-- INotificationService.cs
-- IQueryService.cs
-- ISMSService.cs
-- ITableResultService.cs
+- INotificationService
+- ICommandService
+- ISessionService
+- IAccessControl
+- IEMailService
+- INotificationService
+- IQueryService
+- ISMSService
+- ITableResultService
 
 
 Dtos :
-- DbGeneralResponse.cs
-- GeneralResponse.cs
-- MenuDto.cs
-- RequestCaptchaDto.cs
+- DbGeneralResponse
+- GeneralResponse
+- MenuDto
+- RequestCaptchaDto
 
 
 Infrastructures :
-- IRepository.cs
-- IUnitOfWork.cs
+- IRepository
+- IUnitOfWork
 
 
 Models :
-- ConnectionConfigurationModel.cs
-- InputViewModel.cs
-- SubViewModel.cs
-- ViewElementModel.cs
-- MessageConstruct.cs
-- NameValueModel.cs
+- ConnectionConfigurationModel
+- InputViewModel
+- SubViewModel
+- ViewElementModel
+- MessageConstruct
+- NameValueModel
+- EndPointConfigModel
+- NotificationModel
 
+Enums :
+- SendNotificationStatus
+- 
 
 
 

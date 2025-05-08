@@ -7,7 +7,7 @@
 		<RootNamespace>Bfar.XCutting.Foundation</RootNamespace>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageId>Bfar.XCutting.Foundation</PackageId>
-		<Version>1.0.1.14</Version>
+		<Version>1.0.2.22</Version>
 		<Authors>Behnam Farnoushfar</Authors>
 		<Description>
 			Implementations of bfar abstractions
@@ -30,11 +30,11 @@
 		<None Include="README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Folder Include="Infrastructures\" />
-	</ItemGroup>
-	<ItemGroup>
 	  <PackageReference Include="Dapper" Version="2.1.66" />
+	  <PackageReference Include="MailKit" Version="4.12.0" />
 	  <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
+	  <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.4" />
+	  <PackageReference Include="Polly" Version="8.5.2" />
 	</ItemGroup>
 	<ItemGroup>
 	  <ProjectReference Include="..\Abstraction\Abstraction.csproj" />
