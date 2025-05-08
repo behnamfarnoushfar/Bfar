@@ -19,6 +19,7 @@ ApplicationServices :
 - IQueryService
 - ISMSService
 - ITableResultService
+- IErrorLookupService
 
 
 Dtos :

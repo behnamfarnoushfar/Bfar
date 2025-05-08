@@ -5,6 +5,7 @@ Adapters :
 
 Infrastructures
  - MailKitEmailNotificationService
+ - ErrorCodeService
 
 
 
