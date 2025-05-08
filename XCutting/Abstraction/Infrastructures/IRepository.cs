@@ -9,5 +9,8 @@ namespace Bfar.XCutting.Abstractions.Infrastructures
         Task<DbGeneralResponse?> AddAsync(T entity);
         Task<DbGeneralResponse?> UpdateAsync(T entity);
         Task<DbGeneralResponse?> DeleteAsync(int id);
+        Task<DbGeneralResponse?> ExecuteAdHocAsync(T? model);
+        Task<TResult?> ExecuteAdHocAsync<TResult>(T? model);
+        Task<TResult?> ExecuteProcedureAsync<TResult>(T? model);
     }
 }

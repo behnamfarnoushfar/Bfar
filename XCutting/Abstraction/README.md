@@ -1,6 +1,6 @@
 ﻿# Bfar.XCutting.Abstractions
 Abstraction classes for Cross-Cutting Concerns in .NET projects.
-Adapters (آداپتورها):
+Adapters :
 - ICircuitBreakerAdapter.cs
 - IDateTimeDecorator.cs
 - IJsonParserAdapter.cs

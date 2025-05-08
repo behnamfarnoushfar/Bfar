@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstraction", "Abstraction\Abstraction.csproj", "{3718CE32-6A19-45E8-BD36-443712D2382A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foundation", "Foundation\Foundation.csproj", "{2B448B29-E037-4D0C-A870-46007AB6375E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3718CE32-6A19-45E8-BD36-443712D2382A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3718CE32-6A19-45E8-BD36-443712D2382A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3718CE32-6A19-45E8-BD36-443712D2382A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B448B29-E037-4D0C-A870-46007AB6375E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B448B29-E037-4D0C-A870-46007AB6375E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B448B29-E037-4D0C-A870-46007AB6375E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B448B29-E037-4D0C-A870-46007AB6375E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

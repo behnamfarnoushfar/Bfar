@@ -1,6 +1,6 @@
 ﻿namespace Bfar.XCutting.Abstractions.Decorators
 {
-    public interface IDateTimeDecorator
+    public interface IDateTimeAdapter
     {
         double DateTimeToEpoch(DateTime dateTime);
         DateTime PersianToGregorian(int year, int month = 1, int day = 1, int hour = 0, int minute = 0, int second = 0);

@@ -4,13 +4,13 @@
 		<TargetFramework>net8.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<RootNamespace>Bfar.XCutting.Abstractions</RootNamespace>
+		<RootNamespace>Bfar.XCutting.Foundation</RootNamespace>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<PackageId>Bfar.XCutting.Abstractions</PackageId>
-		<Version>1.11.39.43</Version>
+		<PackageId>Bfar.XCutting.Foundation</PackageId>
+		<Version>1.0.1.14</Version>
 		<Authors>Behnam Farnoushfar</Authors>
 		<Description>
-			Abstractions classes:You can use these classes along side your project or other projects of this repository
+			Implementations of bfar abstractions
 
 		</Description>
 		<ProjectUrl>https://github.com/behnamfarnoushfar/Bfar</ProjectUrl>
@@ -18,9 +18,9 @@
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/behnamfarnoushfar/Bfar</RepositoryUrl>
-		<ReleaseNotes>Initial release with basic abstractions classes.</ReleaseNotes>
+		<ReleaseNotes>Initial release Implementations of bfar abstractions.</ReleaseNotes>
 		<Copyright>Copyright © 2030 Behnam</Copyright>
-		<Tags>Cross-Cutting, Abstractions, .NET, Utilities</Tags>
+		<Tags>Cross-Cutting, Foundations, .NET, Utilities</Tags>
 	</PropertyGroup>
 	<Target Name="PostPack" AfterTargets="Pack" Condition="'$(Configuration)' == 'Release'">
 		<Exec Command="dotnet nuget push $(MSBuildProjectDirectory)\$(PackageOutputPath)$(PackageId).$(Version).nupkg --source https://api.nuget.org/v3/index.json -k " />
@@ -28,5 +28,15 @@
 	<ItemGroup>
 		<None Include="LICENSE.md" Pack="true" PackagePath="\" />
 		<None Include="README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Infrastructures\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Dapper" Version="2.1.66" />
+	  <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\Abstraction\Abstraction.csproj" />
 	</ItemGroup>
 </Project>
