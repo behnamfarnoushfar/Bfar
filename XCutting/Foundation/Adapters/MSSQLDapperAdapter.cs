@@ -39,7 +39,7 @@ namespace Bfar.XCutting.Foundation.Adapters
         {
             var commandType = isStoreProcedure ? CommandType.StoredProcedure : CommandType.Text;
             return await _dbConnection.QueryFirstOrDefaultAsync<DbGeneralResponse>(
-                query, parameters, transaction, timeout, commandType) ?? new DbGeneralResponse { Code = 500, Message = "Unexpected database error" };
+                query, parameters, transaction, timeout, commandType) ?? new DbGeneralResponse { Code = 500, Msg = "Unexpected database error" };
         }
 
         public async Task<DbGeneralResponse> BulkInsertAsync<TParameters>(string table, List<TParameters> parameters, IDbTransaction? transaction = null, int timeout = 30)
@@ -68,7 +68,7 @@ namespace Bfar.XCutting.Foundation.Adapters
             }
             dt?.Clear();
             GC.Collect(5, GCCollectionMode.Aggressive, true, true);
-            return new DbGeneralResponse { Code = 200, Message = "Bulk insert completed successfully" };
+            return new DbGeneralResponse { Code = 200, Msg = "Bulk insert completed successfully" };
         }
 
         

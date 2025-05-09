@@ -2,8 +2,8 @@
 {
     public sealed class DbGeneralResponse
     {
-        public long Id { get; set; }
+        public long Result { get; set; }
         public int Code { get; set; }
-        public string? Message { get; set; }
+        public string? Msg { get; set; }
     }
 }
