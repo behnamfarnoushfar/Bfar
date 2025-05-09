@@ -6,19 +6,17 @@ using Microsoft.Extensions.Logging;
 using MimeKit;
 using Polly;
 using Polly.Retry;
-using System;
 
 namespace Bfar.XCutting.Foundation.Infrastructures
 {
 
     public sealed class MailKitEmailNotificationService : INotificationService<NotificationModel, string>
     {
-        private readonly EndPointConfigModel _smtpOptions;
+        private EndPointConfigModel? _smtpOptions;
         private readonly ILogger? logger;
         private readonly AsyncRetryPolicy _retryPolicy;
-        public MailKitEmailNotificationService(EndPointConfigModel smtpOptions, ILogger logger)
+        public MailKitEmailNotificationService(ILogger logger)
         {
-            _smtpOptions = smtpOptions;
             this.logger = logger;
             _retryPolicy = Policy
             .Handle<Exception>()
@@ -30,7 +28,11 @@ namespace Bfar.XCutting.Foundation.Infrastructures
                 });
 
         }
-
+        public INotificationService<NotificationModel, string> SetConfiguration(EndPointConfigModel endPointConfigModel)
+        {
+            _smtpOptions = endPointConfigModel;
+            return this;
+        }
         public async Task<Memory<byte>?> SendNotificationAsync(NotificationModel notification, CancellationToken cancellationToken = default)
         {
             if (notification?.Receipients is null || !notification.Receipients.Any())

@@ -10,14 +10,11 @@ namespace Bfar.XCutting.Foundation.Adapters
     {
         private IDbConnection _dbConnection;
         private string? _connectionString;
-        public MSSQLDapperAdapter(IDbConnection dbConnection)
-        {
-            _dbConnection = dbConnection;
-        }
-        public void SetConnectionString(string connectionString)
+        public IDatabaseAdapter SetConnectionString(string connectionString)
         {
             _connectionString = connectionString;
             _dbConnection = new SqlConnection(_connectionString);
+            return this;
         }
 
         public async Task<TResult?> ExecuteFirstAsync<TParameters, TResult>(
