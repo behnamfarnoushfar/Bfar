@@ -9,5 +9,7 @@
         public string? UID { get; set; }
         public bool IsSuccessFull { get; set; }
         public T? Content { get; set; }
+        public int Duration { get; set; }
+        public string? Raw { get; set; }
     }
 }
