@@ -23,7 +23,7 @@ namespace Bfar.XCutting.Foundation.Adapters
         {
             var options = new RestClientOptions(host)
             {
-                MaxTimeout = -1
+                Timeout = TimeSpan.FromHours(1)
             };
             var client = new RestClient(options, configureSerialization: s => s.UseSystemTextJson(new JsonSerializerOptions
             {
