@@ -1,0 +1,15 @@
+﻿namespace Bfar.XCutting.Abstractions.Entities.Dtos
+{
+    public sealed class GeneralResponse<T>
+    {
+        public byte[]? TraceMask { get; set; }
+        public int ResultCode { get; set; }
+        public string? OperationDescription { get; set; }
+        public string? BusinessDescription { get; set; }
+        public string? UID { get; set; }
+        public bool IsSuccessFull { get; set; }
+        public T? Content { get; set; }
+        public int Duration { get; set; }
+        public string? Raw { get; set; }
+    }
+}

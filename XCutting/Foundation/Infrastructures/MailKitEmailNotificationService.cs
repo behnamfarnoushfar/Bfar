@@ -1,5 +1,5 @@
 ﻿using Bfar.XCutting.Abstractions.ApplicationServices;
-using Bfar.XCutting.Abstractions.Models;
+using Bfar.XCutting.Abstractions.Entities.Models;
 using MailKit.Net.Smtp;
 using MailKit.Security;
 using Microsoft.Extensions.Logging;

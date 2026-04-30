@@ -1,4 +1,4 @@
-﻿using Bfar.XCutting.Abstractions.Models;
+﻿using Bfar.XCutting.Abstractions.Entities.Models;
 
 namespace Bfar.XCutting.Abstractions.ApplicationServices
 {

@@ -8,6 +8,8 @@ Adapters :
 - IRepositoryAdapter
 - IRestClientAdapter
 
+Decorators :
+- RepositoryServiceDecorator
 
 ApplicationServices :
 - INotificationService
@@ -27,6 +29,7 @@ Dtos :
 - GeneralResponse
 - MenuDto
 - RequestCaptchaDto
+- AppDto
 
 
 Infrastructures :
@@ -43,10 +46,23 @@ Models :
 - NameValueModel
 - EndPointConfigModel
 - NotificationModel
+- IPRecord
+- PaginationModel
+- GeneralModel
 
 Enums :
 - SendNotificationStatus
-- 
+
+SharedKernel :
+- CoreConfig
+- ICommandService
+- IQueryService
+- IReceiver
+- IRepositoryService
+- IRestClientService
+- IServiceDecorator
+- ISharedKernel
+- SharedKernelPortConfig
 
 
 
