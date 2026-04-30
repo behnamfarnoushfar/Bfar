@@ -72,13 +72,26 @@ namespace Bfar.XCutting.Foundation.Extensions
         {
             if (string.IsNullOrEmpty(input))
                 return input;
-            string[] persian = new string[10] { "۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹" };
+            string[] persian = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
 
             for (int j = 0; j < persian.Length; j++)
                 input = input.Replace(persian[j], j.ToString());
 
             return input;
         }
+
+        public static string ToPersianNumbers(this string input)
+        {
+            string[] persianDigits = { "۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹" };
+
+            for (int i = 0; i < 10; i++)
+            {
+                input = input.Replace(i.ToString(), persianDigits[i]);
+            }
+
+            return input;
+        }
+
         public static string ToNormalPersianString(this string input)
         {
             return string.IsNullOrEmpty(input) ? input : input.Replace('ي', 'ی').Replace('ئ', 'ی').Replace('أ', 'ا').Replace('إ', 'ا')

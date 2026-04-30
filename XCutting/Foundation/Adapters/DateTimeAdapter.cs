@@ -1,11 +1,21 @@
 ﻿using Bfar.XCutting.Abstractions.Decorators;
 using Bfar.XCutting.Foundation.Constants;
+using Bfar.XCutting.Foundation.Extensions;
 using System.Globalization;
 
 namespace Bfar.XCutting.Foundation.Adapters
 {
     public sealed class DateTimeAdapter : IDateTimeAdapter
     {
+        private static readonly string[] PersianDayNames =
+        {
+            "یکشنبه", "دوشنبه", "سه‌شنبه", "چهارشنبه", "پنجشنبه", "جمعه", "شنبه"
+        };
+
+        private static readonly string[] PersianMonthNames =
+        {
+            "فروردین", "اردیبهشت", "خرداد", "تیر", "مرداد", "شهریور","مهر", "آبان", "آذر", "دی", "بهمن", "اسفند"
+        };
         private static PersianCalendar pc = new PersianCalendar();
 
         public DateTime EpochToDateTime(double epochValue) => new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc).AddSeconds(epochValue).ToLocalTime();
@@ -67,6 +77,22 @@ namespace Bfar.XCutting.Foundation.Adapters
             var parts = data.Split(SplitterConstants.DateTimeSplitter, StringSplitOptions.RemoveEmptyEntries);
             return parts.Length == 3 ? new DateTime(int.Parse(parts[0]), int.Parse(parts[1]), int.Parse(parts[2]), 0, 0, 0, new PersianCalendar())
                 : new DateTime(int.Parse(parts[0]), int.Parse(parts[1]), int.Parse(parts[2]), int.Parse(parts[3]), int.Parse(parts[4]), int.Parse(parts[5]), new PersianCalendar());
+        }
+        public string ToPersianCalendarDate( DateTime date)
+        {
+            PersianCalendar pc = new PersianCalendar();
+
+            int year = pc.GetYear(date);
+            int month = pc.GetMonth(date);
+            int day = pc.GetDayOfMonth(date);
+            DayOfWeek dayOfWeek = pc.GetDayOfWeek(date);
+
+            string persianDayName = PersianDayNames[(int)dayOfWeek];
+            string persianMonthName = PersianMonthNames[month - 1];
+            string persianDay = day.ToString("00").ToPersianNumbers();
+            string persianYear = year.ToString().ToPersianNumbers();
+
+            return $"{persianDayName}، {persianDay} {persianMonthName} {persianYear}";
         }
     }
 }

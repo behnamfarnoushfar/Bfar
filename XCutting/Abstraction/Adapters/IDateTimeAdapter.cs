@@ -13,5 +13,6 @@
         DateTime PersianToGregorianDateTime(ReadOnlySpan<char> data);
         DateTime PersianToGregorianDateTime(string data);
         string GregorianToPersian(DateTime dateTime);
+        string ToPersianCalendarDate(DateTime date);
     }
 }
