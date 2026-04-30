@@ -1,16 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
 	<PropertyGroup>
 		<TargetFramework>net10.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<RootNamespace>Bfar.XCutting.Foundation</RootNamespace>
+		<RootNamespace>Bfar.XCutting.SharedKernel</RootNamespace>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<PackageId>Bfar.XCutting.Foundation</PackageId>
-		<Version>1.3.15.77</Version>
+		<PackageId>Bfar.XCutting.SharedKernel</PackageId>
+		<Version>1.0.19.20</Version>
 		<Authors>Behnam Farnoushfar</Authors>
 		<Description>
-			Implementations of bfar abstractions
+			SharedKernel functionalities for bfar projects
 
 		</Description>
 		<ProjectUrl>https://github.com/behnamfarnoushfar/Bfar</ProjectUrl>
@@ -18,31 +17,33 @@
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/behnamfarnoushfar/Bfar</RepositoryUrl>
-		<ReleaseNotes>Initial release Implementations of bfar abstractions.</ReleaseNotes>
+		<ReleaseNotes>Initial release SharedKernel functionalities for bfar projects.</ReleaseNotes>
 		<Copyright>Copyright © 2030 Behnam</Copyright>
-		<Tags>Cross-Cutting, Foundations, .NET, Utilities</Tags>
+		<Tags>SharedKernel, Core Layer, .NET, Utilities</Tags>
 	</PropertyGroup>
 	<Target Name="PostPack" AfterTargets="Pack" Condition="'$(Configuration)' == 'Release'">
 		<Exec Command="dotnet nuget push $(MSBuildProjectDirectory)\$(PackageOutputPath)$(PackageId).$(Version).nupkg --source https://api.nuget.org/v3/index.json -k " />
 	</Target>
 	<ItemGroup>
-		<None Include="LICENSE.md" Pack="true" PackagePath="\" />
+		<None Include="LICENSE.md"  Pack="true" PackagePath="\"/>
 		<None Include="README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 	<ItemGroup>
-	  <PackageReference Include="Dapper" Version="2.1.72" />
-	  <PackageReference Include="MailKit" Version="4.16.0" />
-	  <PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.1" />
 	  <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.7" />
+	  <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.7" />
 	  <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.7" />
-	  <PackageReference Include="Polly" Version="8.6.6" />
-	  <PackageReference Include="RestSharp" Version="114.0.0" />
-	  <PackageReference Include="System.DirectoryServices.Protocols" Version="10.0.7" />
+	  <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="10.0.7" />
 	</ItemGroup>
 	<ItemGroup>
-	  <ProjectReference Include="..\Abstraction\Abstraction.csproj" />
+	  <ProjectReference Include="..\Foundation\Foundation.csproj" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Folder Include="Serializations\" />
+	  <Folder Include="Core\Services\" />
 	</ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
 </Project>
