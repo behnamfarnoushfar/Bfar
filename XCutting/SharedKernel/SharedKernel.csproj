@@ -6,7 +6,7 @@
 		<RootNamespace>Bfar.XCutting.SharedKernel</RootNamespace>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageId>Bfar.XCutting.SharedKernel</PackageId>
-		<Version>1.0.19.27</Version>
+		<Version>1.1.19.29</Version>
 		<Authors>Behnam Farnoushfar</Authors>
 		<Description>
 			SharedKernel functionalities for bfar projects

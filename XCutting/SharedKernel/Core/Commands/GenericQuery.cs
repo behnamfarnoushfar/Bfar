@@ -33,7 +33,7 @@ namespace Bfar.XCutting.SharedKernel.Core.Commands
                     if (pagination is null)
                         dto.Result = await receiver.ReceiveAsync(model, cancellationToken);
                     else
-                        enums = await receiver.ReceiveAsync(model, pagination.PageSize, pagination.OffSet, cancellationToken) as IEnumerable<TOutput>;
+                        dto.Results= await receiver.ReceiveAsync(model, pagination.PageSize, pagination.OffSet, cancellationToken) as IEnumerable<TOutput>;
                     if (pagination is null && dto.Result is null)
                     {
                         dto.Successed = false;
